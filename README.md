@@ -104,7 +104,7 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 
-  1. link variables.js to index.html at the end of the ```<body>``` tag:
+  1. link variables.js to index.html at the end of the ```<body>``` tag
   2. create the following string variables
       + dataType, stores "bool "
       + variableName1, stores "activateGlitchArt"
@@ -132,7 +132,7 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
 
 ### Part 3B: 2nd JavaScript File (script.js)
 
-  1. link script.js to overworld_layers.html at the end of the ```<body>``` tag:
+  1. link script.js to overworld_layers.html at the end of the ```<body>``` tag
   2. add the following code snippet:
   ```js
   // used to change the image
