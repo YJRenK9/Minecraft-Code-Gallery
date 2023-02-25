@@ -1,4 +1,4 @@
-# MC-Code-Gallery
+# Minecraft-Code-Gallery
 
 Now that you learned how to create variables and if/else statements, it's time to apply it to creating your website.  But not just any website, an ICSpark project about Minecraft.  There are many possibilities of implementing Minecraft coding references to a website, but for the sake of this project, we'll just stick with an Entity Gallery and Overworld Layers. 
 
