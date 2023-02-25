@@ -246,10 +246,13 @@ Don't forget to add divs in your HTML files as you can use those to center multi
 You learned how to color the text of the link, give it a background color, and change its font size.  You also learned how to position the link.
 ```css
 a {
+    /* colors the text to be green */
     color: rgb(0, 255, 0);
+    /* colors the background text to be gray */
     background-color: gray;
     font-size: 21px;
     text-align: center;
+    /* removes underline of the link */
     text-decoration: none;
 }
 ```
