@@ -94,6 +94,7 @@ Create the following files:
 
   1. create an ```<a>``` tag that displays "Overworld Layers"
       + its <a> tag should link to overworld_layers.html
+      + its class should be centerElements (to make the CSS file position links at the center)
       
 Completing Part2A means you have 4 images and two pre tags.  Feel free to use <br> tags to properly format your webpage.
 
@@ -101,6 +102,7 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
 
   1. create an ```<a>``` tag that displays "MC Data Types"
       + its <a> tag should link to index.html
+      + its class should be centerElements (to make the CSS file position links at the center)
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 
