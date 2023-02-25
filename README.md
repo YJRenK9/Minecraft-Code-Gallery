@@ -232,54 +232,14 @@ We'll use `@import url("#");` to import a custom font into this project.  The "#
 
 Side note: URL stands for uniform resource locator
 
-  1. create a CSS file called style.css  
+  1. download style.css and put it in the MC_Code_Gallery folder
   2. link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
   ```html
   <!-- enables the CSS file to format and decorate the webpage -->
   <link rel="stylesheet" href="style.css">
   ```
-  3. import the minecrafttia font by typing in the following:
-  ```css
-  /* minecraft font is ready to be used */
-  @import url("https://fontlibrary.org//face/minecraftia");
-  ```
-This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
-  4. give the following attributes to the body selector
-        + backgroud image is dirt_background.jpg
-        + font-family is MinecraftiaRegular
-  5. give the following attributes to the h1 selector
-        + color is white
-        + text align is center
-  6. give the following attributes to h2 and h3 selectors
-        + color is white
-        + **Hint:** you can either create 2 separate selectors or merge them into one selector
-  
-  CSS template of 2 selectors in 1:
-  ```css
-  selector1, selector2 {
-    attribute: value;
-  }
-  ```
-  7. give the following attributes to the pre selector
-      + color is white
-      + font family is MinecraftiaRegular
-      + font size is larger
-    
-The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
-  
-  8. create a class selector called centerElements, and the the following attributes should have:
-      + display is block
-      + text align is center
-      + margin left is auto
-      + margin right is auto
-  9. create an 'a' selector and give the following attributes:
-      + text align is center
-      + color is rgb(0, 255, 0)
-      + background color is gray
-      + font size is 21px
-      + text decoration is none (no underline for links)
 
-Don't forget to add divs in your HTML files
+Don't forget to add divs in your HTML files as you can use those to center multiple images properly.
 
 ### Make hover animations for links
 
