@@ -2,8 +2,8 @@
 
 Now that you learned how to create variables and if/else statements, it's time to apply it to creating your website.  But not just any website, an ICSpark project about Minecraft.  There are many possibilities of implementing Minecraft coding references to a website, but for the sake of this project, we'll just stick with an Entity Gallery and Overworld Layers. 
 
-![Gallery1](Examples/MC_DataTypes_Gallery.png)
-![Gallery3](Examples/Overworld_Layers_Gallery.png)
+![Gallery1](images/Examples/MC_DataTypes_Gallery.png)
+![Gallery3](images/Examples/Overworld_Layers_Gallery.png)
 
 I'd like to give you a **warning** that this project could be lengthy.  Not to mention, this may be a long read as this read me file has around 300 lines of text.  Hence, why this project is divided into 5 parts. 
 
@@ -81,56 +81,30 @@ Notice how '+=' is used to join multiple strings together.  This is to add more 
 
 ### Part I: Setup
 
-Create a folder called MC_Code_Gallery.
-
-In this folder, create the following files:
+Make sure to have the following files:
   + index.html
   + overworld_layers.html
+  + style.css
+  
+Create the following files:
   + variables.js
   + script.js
 
-Next, download the images zip file at https://github.com/YJRenK9/MC-Code-Gallery/blob/main/images.zip (a download button should be present).  Drag that zip file in the folder called MC_Code_Gallery and unzip it.  You should have the images folder with minecraft images present in your project folder. 
-
 ### Part 2A: 1st HTML File (index.html)
 
-  1. create a ```<h1>``` tag that displays "Welcome to the Minecraft Code Gallery!" (do not include double quotes)
-  2. create a ```<h2>``` tag that displays "Game Rule Data Types"
-  4. create 2 img tags 
-      + The first image should be superflat.webp
-      + The second image should be SuperFLatGlitch.png
-  5. Create a ```<pre>``` tag that has an id called booleans1
-  6. create 2 more img tags 
-      + The third image should be keptInventory.webp
-      + The fourth image should be didNotKeepInventory.webp
-  7. Create a ```<pre>``` tag that has an id called booleans2
-  8. create an ```<a>``` tag that displays "Overworld Layers"
-      + its href should be overworld_layers.html
+  1. create an ```<a>``` tag that displays "Overworld Layers"
+      + its <a> tag should link to overworld_layers.html
       
 Completing Part2A means you have 4 images and two pre tags.  Feel free to use <br> tags to properly format your webpage.
 
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
-  1. create a h1 tag that displays "Overworld Layers"
-  2. create an img tag that has plains.jpg as its source
-      + type in imageLayer as its id
-  3. create a ```<h3>``` tag that displays "Click on the arrow buttons to ascend or descend certain layers"  
-  4. create a h1 tag that displays "y = 5"
-      + type in getVerticalPosition as its id
-  5. create a h2 tag that displays "Layer: Plains"
-      + type in layerName as its id
-  6. create 2 img tags
-      + the first image should be Left_Arrow.png and descend as its id
-      + the second image should be Right_Arrow.png and ascend as its id
-  7. create an ```<a>``` tag that displays "MC Data Types"
-      + its href should be index.html
+  1. create an ```<a>``` tag that displays "MC Data Types"
+      + its <a> tag should link to index.html
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 
-  1. add variables.js to index.html by doing the following inside the end of the ```<body>``` tag:
-  ```html
-  <!--  some html code that's above enabling JS  -->
-  <script src="variables.js"></script>
-  ```
+  1. link variables.js to index.html at the end of the ```<body>``` tag:
   2. create the following string variables
       + dataType, stores "bool "
       + variableName1, stores "activateGlitchArt"
@@ -138,7 +112,7 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   3. create the following boolean variables
       + boolValue1, stores false
       + boolValue2, stores true
-  4. apply the following code snippet
+  4. apply the following code snippet (mentors, please make sure the students have this code snippet)
   ```js
   // gets the element id called booleans1
   var paragraph1 = document.getElementById("booleans1");
@@ -146,22 +120,19 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   // gets the element id called booleans2
   var paragraph2 = document.getElementById("booleans2");
   ```
-  5. Use ```.innerHTML```, string concactenation, "\t", and the variables from steps 2 & 3 to display variable declaration to the webpage
+  5. Use ```.innerHTML``` and string concactenation to display text to the webpage
   
-  Here's a code template:
+  Here's the first part of the answer of step 5:
   ```js
-  // the whitespaces sandwiching the '=' makes the text more readable
-  paragrpah.innerHTML = data_type + variable_name + " = " + value;
-  paragraph.innerHTML += <4 tabs> + data_type + variable_name + " = " + value
+  // adds multiple variables in a row to form 2 defined boolean variables
+  paragraph1.innerHTML = dataType + variableName1 + " = " + boolValue1;
+  paragraph1.innerHTML += "\t\t\t\t" + dataType + variableName1 + " = " + boolValue2;
   ```
+  Please incllude this code snippet and do the same for the variable paragraph2.
 
 ### Part 3B: 2nd JavaScript File (script.js)
 
-  1. add script.js to overworld_layers.html by doing the following inside the end of the ```<body>``` tag:
-  ```html
-  <!--  some html code that's above enabling JS  -->
-  <script src="script.js"></script>
-  ```
+  1. link script.js to overworld_layers.html at the end of the ```<body>``` tag:
   2. add the following code snippet:
   ```js
   // used to change the image
@@ -178,36 +149,42 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   // used to get the name of the layer depending on the y_position
   var location_name = document.getElementById("layerName");
   ```
+  
+  (Mentors, have students copy and paste the above code snippet to their script.js file)
+  
   3. create a variable called y_position that stores an int value of 5
   4. add the following code snippets
   ```js
   // have the left arrow "button" manipulate the webpage when clicked on
   descendVertically.addEventListener("click", function() {
-    
+    // continue coding steps 5 through 8 in here
   });
   
   // have the right arrow "button" manipulate the webpage when clicked on
   ascendVertically.addEventListener("click", function() {
-    
+    // continue coding steps 5 through 8 in here
   });
   ```
+  
+ (Mentors, have students copy and paste the above code snippet to their script.js file)
+  
   5. decrement the y_position by 1 inside the unnamed function of descendVertically
   6. increment the y_position by 1 inside the unnamed function of ascendVertically
-  7. update the y_position on the webpage by using ```.innerHTML``` for verticalPosition, in both add event listeners
-  8. create an if/else statement for each add event listeners, the if/else statement should inculde: 
-      + if y_position is >= 20
+  7. Update the y_position on the webpage by using ```.innerHTML``` to verticalPosition.  
+  8. Create an if/else statement.  The if/else statement should inculde: 
+      + if y_position is greater than or equal to 20
         + layer.src would be Sky.jpg
         + location_name.innerHTML would be "Layer: Above the Clouds"
-      + else if y_position is >= 10
+      + else if y_position is greater than or equal to 10
         + layer.src would be mountains.webp
         + location_name.innerHTML would be "Layer: Mountains"
-      + else if y_position is >= 5
+      + else if y_position is greater than or equal to 5
         + layer.src would be plains.jpg
         + location_name.innerHTML would be "Layer: Plains"
-      + else if y_position is >= 2
+      + else if y_position is greater than or equal to 2
         + layer.src would be Cave.webp
         + location_name.innerHTML would be "Layer: Caves"
-      + else if y_position is >= 0
+      + else if y_position is greater than or equal to 0
         + layer.src would be Lava_Cave.webp
         + location_name.innerHTML would be "Layer: Lava Caves"
       + else
@@ -232,27 +209,64 @@ We'll use `@import url("#");` to import a custom font into this project.  The "#
 
 Side note: URL stands for uniform resource locator
 
-  1. download style.css and put it in the MC_Code_Gallery folder
+  1. create a CSS file called style.css  
   2. link your CSS file to both of your HTML files by doing the following in the ```<head>``` tag:
   ```html
   <!-- enables the CSS file to format and decorate the webpage -->
   <link rel="stylesheet" href="style.css">
   ```
+  3. import the minecrafttia font by typing in the following:
+  ```css
+  /* minecraft font is ready to be used */
+  @import url("https://fontlibrary.org//face/minecraftia");
+  ```
+This will only make the minecraftia font available to use for your webpage. So, to change the default font to the minecraftia one, you must also change the font-family attribute for certain CSS selectors.    
+  4. give the following attributes to the body selector
+        + backgroud image is dirt_background.jpg
+        + font-family is MinecraftiaRegular
+  5. give the following attributes to the h1 selector
+        + color is white
+        + text align is center
+  6. give the following attributes to h2 and h3 selectors
+        + color is white
+        + **Hint:** you can either create 2 separate selectors or merge them into one selector
+  
+  CSS template of 2 selectors in 1:
+  ```css
+  selector1, selector2 {
+    attribute: value;
+  }
+  ```
+  7. give the following attributes to the pre selector
+      + color is white
+      + font family is MinecraftiaRegular
+      + font size is larger
+    
+The reason why we update the font family to the pre tags is because the font from console.log() cannot be changed.  So, we must change the JavaScript text via the pre selector.
+  
+  8. create a class selector called centerElements, and the the following attributes should have:
+      + display is block
+      + text align is center
+      + margin left is auto
+      + margin right is auto
+  9. create an 'a' selector and give the following attributes:
+      + text align is center
+      + color is rgb(0, 255, 0)
+      + background color is gray
+      + font size is 21px
+      + text decoration is none (no underline for links)
 
-Don't forget to add divs in your HTML files as you can use those to center multiple images properly.
+Don't forget to add divs in your HTML files
 
 ### Make hover animations for links
 
 You learned how to color the text of the link, give it a background color, and change its font size.  You also learned how to position the link.
 ```css
 a {
-    /* colors the text to be green */
     color: rgb(0, 255, 0);
-    /* colors the background text to be gray */
     background-color: gray;
     font-size: 21px;
     text-align: center;
-    /* removes underline of the link */
     text-decoration: none;
 }
 ```
@@ -265,4 +279,4 @@ Although it's easy to implement an input box, you'll deal with more test cases. 
 
 ### Create another webpage of Minecraft coding references
 
-Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  You can also apply int, float, and string variables to the rest of the minecraft images provided in the images zip file.  Not to mention, try to include "\n" to your JS files. 
+Apply conditional operators (<, >, <=, >=, ==, !=) to ranking minecraft armor.  Apply the &&(and) and the ||(or) logical operators to when the player is able to go to sleep.  Those conditions are when it's night time or there's a thunderstorm and when there's no hostile mobs nearby.  Apply the !(not; negation) logical operator to when the mob is not hostile, the iron golem and snow golem won't attack that mob.  No if/else statements are invovled, however, try to output text to the webpage via a JavaScript file.  You can also apply int, float, and string variables to the rest of the minecraft images provided in the images zip file.  Not to mention, try to include "\n" to your JS files.   
