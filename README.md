@@ -5,11 +5,11 @@ Now that you learned how to create variables and if/else statements, it's time t
 ![Gallery1](Examples/MC_DataTypes_Gallery.png)
 ![Gallery3](Examples/Overworld_Layers_Gallery.png)
 
-I'd like to give you a **warning** that this project could be lengthy.  Not to mention, this may be a long read as this read me file has around 300 lines of text.  Hence, why this project is divided into 5 parts. 
+I'd like to give you a **warning** that this project could be lengthy.  Not to mention, this may be a long read as this README file has around 300 lines of text.  Hence, why this project is divided into 5 parts. 
 
 ## Objectives
 
-Use **JavaScript** to display text and manipulate elements on webpages.  Also, use HTML and CSS to display annd format images on webpages.
+Use **JavaScript** to display text and manipulate elements on webpages.  Also, use HTML and CSS to display and format images on webpages.
   1. Create a gallery of Entity data types
   2. Create a gallery of Game Rule data types
   3. Create another webpage that lets the user click on the arrow buttons to change the vertical position along with the Minecraft environment
