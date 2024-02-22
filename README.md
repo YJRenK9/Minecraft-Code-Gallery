@@ -93,8 +93,8 @@ Create the following files:
 ### Part 2A: 1st HTML File (index.html)
 
   1. create an ```<a>``` tag that displays "Overworld Layers"
-      + its <a> tag should link to overworld_layers.html
-      + its class should be centerElements (to make the CSS file position links at the center)
+      + its href attribute should be set to overworld_layers.html
+      + its class attribute should be set to centerElements (to make the CSS file position links at the center)
       
 Completing Part2A means you have 4 images and two pre tags.  Feel free to use <br> tags to properly format your webpage.
 
