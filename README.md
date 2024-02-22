@@ -39,14 +39,14 @@ More information about `<pre>` can be found at [W3Schools](https://www.w3schools
 | JavaScript  | Description |
 | ------------- | ------------- |
 | \t | escape sequence for horizontal tab |
-| string concactenation (+) | joins 2 or more strings together |
-| string concactenation (+=) | joins 1 or more strings together into an existing string variable |
+| string concatenation (+) | joins 2 or more strings together |
+| string concatenation (+=) | joins 1 or more strings together into an existing string variable |
 
 When you find coding several whitespaces to be tiring, use `\t` as it's equivalent to about 8 whitespaces.  It is somewhat similar to the horizontal version of a line break.
 
-### String Concactenation
+### String Concatenation
 
-String Concactenation is the process of adding two strings together to form one string.  In other words, it's like joining two words together.  For example, appending "Poly" and "gon" gives us "Polygon".  Let's see how string concactenation works in JavaScript.
+String Concatenation is the process of adding two strings together to form one string.  In other words, it's like joining two words together.  For example, appending "Poly" and "gon" gives us "Polygon".  Let's see how string concatenation works in JavaScript.
 
 ```js
 // the whitespace helps us read the two words easily
@@ -61,7 +61,7 @@ var string2 = " is so cool!";
 console.log(string1 + string2);
 // Result: Glitch Art is so cool!
 ```
-Notice how there's a whitespace right before "is" in the variable string2.  This is a shorter way of doing ```console.log("Glitch Art" + " " + "is so cool!")```.  It may look aesthetically weird, but it makes your code more compact by typing less code.  In other words, it's the opposite of doing more work than you should.  Without the whitespace, the result would be "Glitch Artis so cool!", which makes the reader more confused whether "Artis" is another word or "Artis" is supposed to be "Art is".
+Notice a whitespace right before "is" in the variable string2.  This is a shorter way of doing ```console.log("Glitch Art" + " " + "is so cool!")```.  It may look aesthetically weird, but it makes your code more compact by typing less code.  In other words, it's the opposite of doing more work than you should.  Without the whitespace, the result would be "Glitch Artis so cool!", which makes the reader more confused whether "Artis" is another word or "Artis" is supposed to be "Art is".
 ```js
 var game = "Minecraft is about ";
 var genre1 = "building";
@@ -75,7 +75,7 @@ game += genre1 + ", " + genre2 + ", " + genre3 + ", and " + genre4;
 console.log(game);
 // Result: Minecraft is about building, exploring, adventuring, and mini games.
 ```
-Notice how '+=' is used to join multiple strings together.  This is to add more information to the same string variable.  It'll come in handy when you don't want to type a long-baked horizontal line of code.  If you want to add more strings to a string variable, you can press enter and type the same thing again but with different string variables. 
+Notice how '+=' is used to join multiple strings together.  This is to add more information to the same string variable.  It'll be useful when you don't want to type a long-baked horizontal line of code.  If you want to add more strings to a string variable, you can press enter and type the same thing again but with different string variables. 
 
 ## Your Challenge
 
@@ -90,31 +90,36 @@ Create the following files:
   + variables.js
   + script.js
 
+Each HTML file contains 4 img tags and two pre tags.
+
 ### Part 2A: 1st HTML File (index.html)
 
   1. create an ```<a>``` tag that displays "Overworld Layers"
-      + its href attribute should be set to overworld_layers.html
-      + its class attribute should be set to centerElements (to make the CSS file position links at the center)
-      
-Completing Part2A means you have 4 images and two pre tags.  Feel free to use <br> tags to properly format your webpage.
+      + its href attribute should be set to ```overworld_layers.html```
+      + its class attribute should be set to ```centerElements``` (to make the CSS file position links at the center)
+  2. create a script tag right at the end of the ```<body>``` tag
+      + its src attribute should be set to ```variables.js```
 
 ### Part 2B: 2nd HTML File (overworld_layers.html)
 
   1. create an ```<a>``` tag that displays "MC Data Types"
-      + its <a> tag should link to index.html
-      + its class should be centerElements (to make the CSS file position links at the center)
+      + its <a> tag should link to ```index.html```
+      + its class should be ```centerElements``` (to make the CSS file position links at the center)
+  2. create a script tag right at the end of the ```<body>``` tag
+      + its src attribute should be set to ```script.js```
+
+After completing Part 2B, both HTML files should have a total of 2 <a> tags and 2 script tags.  Feel free to use <br> tags to format your webpage properly.  Now, we're going to add functionality to the HTML files by creating JavaScript code inside two JS files.
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 
-  1. link variables.js to index.html at the end of the ```<body>``` tag
-  2. create the following string variables
+  1. create the following string variables
       + dataType, stores "bool "
       + variableName1, stores "activateGlitchArt"
       + variableName2, stores "keepInventory"
-  3. create the following boolean variables
+  2. create the following boolean variables
       + boolValue1, stores false
       + boolValue2, stores true
-  4. apply the following code snippet (mentors, please make sure the students have this code snippet)
+  3. apply the following code snippet (mentors, please make sure the students have this code snippet)
   ```js
   // gets the element id called booleans1
   var paragraph1 = document.getElementById("booleans1");
@@ -122,7 +127,7 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   // gets the element id called booleans2
   var paragraph2 = document.getElementById("booleans2");
   ```
-  5. Use ```.innerHTML``` and string concactenation to display text to the webpage
+  4. Use ```.innerHTML``` and string concatenation to display text on the webpage
   
   Here's the first part of the answer of step 5:
   ```js
@@ -130,12 +135,11 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   paragraph1.innerHTML = dataType + variableName1 + " = " + boolValue1;
   paragraph1.innerHTML += "\t\t\t\t" + dataType + variableName1 + " = " + boolValue2;
   ```
-  Please incllude this code snippet and do the same for the variable paragraph2.
+  Please include this code snippet and do the same for the variable paragraph2.  For the code snippet you duplicated, replace paragraph1 with paragraph2 and variableName1 with variableName2.  
 
 ### Part 3B: 2nd JavaScript File (script.js)
 
-  1. link script.js to overworld_layers.html at the end of the ```<body>``` tag
-  2. add the following code snippet:
+  1. add the following code snippet:
   ```js
   // used to change the image
   var layer = document.getElementById("imageLayer");
@@ -154,8 +158,8 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   
   (Mentors, have students copy and paste the above code snippet to their script.js file)
   
-  3. create a variable called y_position that stores an int value of 5
-  4. add the following code snippets
+  2. create a variable called y_position that stores an int value of 5
+  3. add the following code snippets
   ```js
   // have the left arrow "button" manipulate the webpage when clicked on
   descendVertically.addEventListener("click", function() {
@@ -170,10 +174,13 @@ Completing Part2A means you have 4 images and two pre tags.  Feel free to use <b
   
  (Mentors, have students copy and paste the above code snippet to their script.js file)
   
-  5. decrement the y_position by 1 inside the unnamed function of descendVertically
-  6. increment the y_position by 1 inside the unnamed function of ascendVertically
-  7. Update the y_position on the webpage by using ```.innerHTML``` to verticalPosition.  
-  8. Create an if/else statement.  The if/else statement should inculde: 
+  4. decrement the y_position by 1 inside the unnamed function of descendVertically
+  5. increment the y_position by 1 inside the unnamed function of ascendVertically
+
+  Apply steps 6 and 7 for **both** ```descendVertically``` and ```ascendVertically``` functions.
+  
+  6. Update the y_position on the webpage by using ```.innerHTML``` to verticalPosition.
+  7. Create an if/else statement.  The if/else statement should inculde: 
       + if y_position is greater than or equal to 20
         + layer.src would be Sky.jpg
         + location_name.innerHTML would be "Layer: Above the Clouds"
