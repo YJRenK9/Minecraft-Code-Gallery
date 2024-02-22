@@ -108,7 +108,7 @@ Each HTML file contains 4 ```<img>``` tags and two ```<pre>``` tags.
   2. create a script tag right at the end of the ```<body>``` tag
       + its src attribute should be set to ```script.js```
 
-After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tags and 2 ```<script>``` tags.  Feel free to use <br> tags to format your webpage properly.  Now, we're going to add functionality to the HTML files by creating JavaScript code inside two JS files.
+After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tags and 2 ```<script>``` tags.  Feel free to use ```<br>``` tags to format your webpage properly.  Now, we're going to add functionality to the HTML files by creating JavaScript code inside two JS files.
 
 ### Part 3A: 1st JavaScript File (variables.js) 
 
