@@ -145,9 +145,9 @@ After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tag
   var layer = document.getElementById("imageLayer");
 
   // used to decrease the displayed y_position value
-  var descendVeritcally = document.getElementById("descend");
+  var descendVertically = document.getElementById("descend");
   // used to increase the displayed y_position value
-  var ascendVeritcally = document.getElementById("ascend");
+  var ascendVertically = document.getElementById("ascend");
 
   // used to display the y_postion on the webpage
   var verticalPosition = document.getElementById("getVerticalPosition");
