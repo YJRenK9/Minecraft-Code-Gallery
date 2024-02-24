@@ -114,11 +114,11 @@ After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tag
 
   1. create the following string variables
       + dataType, stores "bool "
-      + variableName1, stores "activateGlitchArt"
-      + variableName2, stores "keepInventory"
+      + ```variableName1``` stores "activateGlitchArt"
+      + ```variableName2``` stores "keepInventory"
   2. create the following boolean variables
-      + boolValue1, stores false
-      + boolValue2, stores true
+      + ```boolValue1``` stores false
+      + ```boolValue2``` stores true
   3. apply the following code snippet (mentors, please make sure the students have this code snippet)
   ```js
   // gets the element id called booleans1
