@@ -113,7 +113,7 @@ After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tag
 ### Part 3A: 1st JavaScript File (variables.js) 
 
   1. create the following string variables
-      + dataType, stores "bool "
+      + ```dataType``` stores "bool "
       + ```variableName1``` stores "activateGlitchArt"
       + ```variableName2``` stores "keepInventory"
   2. create the following boolean variables
