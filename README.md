@@ -129,7 +129,7 @@ After completing Part 2B, both HTML files should have a total of 2 ```<a>``` tag
   ```
   4. Use ```.innerHTML``` and string concatenation to display text on the webpage
   
-  Here's the first part of the answer of step 5:
+  Here's the first part of the answer of step 4:
   ```js
   // adds multiple variables in a row to form 2 defined boolean variables
   paragraph1.innerHTML = dataType + variableName1 + " = " + boolValue1;
